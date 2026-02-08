@@ -1,0 +1,24 @@
+--cpu=Cortex-M4.fp
+"0208_bipedx\startup_stm32f407xx.o"
+"0208_bipedx\stm32f4xx_hal_rcc.o"
+"0208_bipedx\stm32f4xx_hal_rcc_ex.o"
+"0208_bipedx\stm32f4xx_hal_flash.o"
+"0208_bipedx\stm32f4xx_hal_flash_ex.o"
+"0208_bipedx\stm32f4xx_hal_flash_ramfunc.o"
+"0208_bipedx\stm32f4xx_hal_gpio.o"
+"0208_bipedx\stm32f4xx_hal_dma_ex.o"
+"0208_bipedx\stm32f4xx_hal_dma.o"
+"0208_bipedx\stm32f4xx_hal_pwr.o"
+"0208_bipedx\stm32f4xx_hal_pwr_ex.o"
+"0208_bipedx\stm32f4xx_hal_cortex.o"
+"0208_bipedx\stm32f4xx_hal.o"
+"0208_bipedx\stm32f4xx_hal_exti.o"
+"0208_bipedx\system_stm32f4xx.o"
+"0208_bipedx\main.o"
+"0208_bipedx\gpio.o"
+"0208_bipedx\stm32f4xx_it.o"
+"0208_bipedx\stm32f4xx_hal_msp.o"
+--strict --scatter "0208_BipedX\0208_BipedX.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "0208_BipedX.map" -o 0208_BipedX\0208_BipedX.axf
